@@ -1,0 +1,31 @@
+video:
+  min_fps: 24
+  max_fps: 120
+  max_resolution: [1920, 1080]
+  export_fps:
+  batch_size: 8
+detection:
+  ball_model_path: models/ball_detector.pt
+  player_model_path: models/yolov8n.pt
+  confidence_threshold: 0.3
+  nms_threshold: 0.5
+  max_detections: 5
+tracking:
+  max_missed_frames: 10
+  smoothing_window: 5
+physics:
+  table_length_m: 2.74
+  table_width_m: 1.525
+  enable_table_detection: true
+segmentation:
+  rally_gap_seconds: 2.0
+  min_shots_per_rally: 2
+  shot_angle_threshold_deg: 90.0
+  shot_player_distance_px: 120.0
+visualization:
+  trail_length: 15
+  speed_color_low: [0, 255, 0]
+  speed_color_mid: [0, 255, 255]
+  speed_color_high: [0, 0, 255]
+  show_player_boxes: true
+  show_stats_panel: true
