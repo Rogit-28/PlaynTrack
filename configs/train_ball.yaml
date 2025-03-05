@@ -1,0 +1,7 @@
+model: yolov8n.pt
+imgsz: 640
+epochs: 50
+batch: 16
+patience: 10
+project: runs/ball_train
+name: yolo_ball
