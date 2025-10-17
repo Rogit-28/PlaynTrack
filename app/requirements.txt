@@ -1,0 +1,8 @@
+fastapi
+uvicorn[standard]
+opencv-python
+ultralytics
+numpy
+psycopg2-binary
+sort-tracker
+pydantic-settings
